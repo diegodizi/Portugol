@@ -1,0 +1,27 @@
+algoritmo "Idade"
+
+var
+  idade: inteiro
+  maioridadePenal: inteiro
+  maioridadeCivil: inteiro
+
+inicio
+  idade <- 18
+  maioridadeCivil <- 21
+  maioridadePenal <- 18
+
+  escreval("Idade: ", idade)
+  escreval("Maioridade civil: ", maioridadeCivil)
+  escreval("Maioridade penal: ", maioridadePenal)
+  
+  escreval("É maior de idade? ", idade = maioridadePenal)
+  escreval("A maior idade civil é diferente da penal? ", maioridadeCivil<>maioridadePenal)
+  escreval("A maior idade civil é maior que a penal? ", maioridadeCivil>maioridadePenal)
+  escreval("A maior idade civil é menor que a penal? ", maioridadeCivil<maioridadePenal)
+
+  escreval("A idade é igual ou maior que a maioridade penal? ", idade >= maioridadePenal)
+  escreval("A idade é menor ou igual a maioridade penal? ", idade <= maioridadePenal)
+  escreval("A minha idade é maior todas as maior idade? ", idade >= maioridadeCivil E idade >= maioridadePenal)
+  escreval("A minha idade é maior que algum valor de maior idade? ", idade >= maioridadeCivil ou idade >= maioridadePenal)
+  escreval("A idade é menor que ambas as maioridades? ", NAO(idade <= maioridadeCivil E idade <=maioridadePenal))
+fimalgoritmo
